@@ -5,7 +5,7 @@ window.onload = function() {
      var pack = document.getElementById("View");
     pack.addEventListener("click", view);
      var pack = document.getElementById("YDK");
-    pack.addEventListener("click", view);
+    pack.addEventListener("click", YDK);
 }
 
 function YDK() {
@@ -41,13 +41,26 @@ function openPack() {
         cardImg.id = i;
 
         let num = 1;
+        const randomValue = Math.random();
+
         if (i == 5) {
             num = randomNumber(41, 50);
         }
         else {
-            num = randomNumber (1, 40);  
-           
+            if (randomValue < 0.80) {
+                num = randomNumber(16, 40);
+            } else if (randomValue < 0.85) {
+                num = randomNumber(3, 7);
+            } else if (randomValue < 0.99){
+                num = randomNumber(8, 15); 
+            } else {
+                num = randomNumber(1, 2);
+            }
+                
+            
         }
+
+        
         
      
         cardImg.src = "./Custom-Pack-YGO-1/LPGD- (" + num.toString() + ").jpg";

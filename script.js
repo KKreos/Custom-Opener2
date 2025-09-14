@@ -26,12 +26,7 @@ function openPack() {
     }
     
     for (let i =0; i < 6; i++) {    
-        /*
-            <span class="Yugioh-card">
-                <img id="0" src="./Custom-Pack-YGO-1/LPGD- (5).jpg">
-            </span>
-            
-        */
+
         let cardSpan = document.createElement("span");
         cardSpan.classList.add("Yugioh-card");
 
@@ -77,3 +72,4 @@ function openPack() {
         document.getElementById("YGO-cards-opened").appendChild(cardSpan);
     }
 }
+

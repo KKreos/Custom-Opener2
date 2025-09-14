@@ -2,8 +2,7 @@
 window.onload = function() {
     var pack = document.getElementById("Open");
     pack.addEventListener("click", openPack);
-     var pack = document.getElementById("View");
-    pack.addEventListener("click", view);
+     
      var pack = document.getElementById("YDK");
     pack.addEventListener("click", YDK);
 }
@@ -12,9 +11,8 @@ function YDK() {
     alert("Fonction pas encore disponible");
 }
 
-function view() {
-    alert("Fonction pas encore disponible");
-}
+
+
 
 function randomNumber(min, max) {
     return Math.ceil(Math.random() * (max-min) + min);
@@ -46,19 +44,29 @@ function openPack() {
         if (i == 5) {
             num = randomNumber(41, 50);
         }
-        else {
+
+        else if (i == 4) {
             if (randomValue < 0.80) {
-                num = randomNumber(16, 40);
-            } else if (randomValue < 0.85) {
-                num = randomNumber(3, 7);
-            } else if (randomValue < 0.99){
-                num = randomNumber(8, 15); 
-            } else {
-                num = randomNumber(1, 2);
-            }
-                
-            
-        }
+                num = randomNumber(16, 40);
+            } else if (randomValue < 0.85) {
+                num = randomNumber(3, 7);
+            } else if (randomValue < 0.99){
+                num = randomNumber(8, 15); 
+            } else {
+                num = randomNumber(1, 2);
+            }
+
+       
+                
+            
+        }
+
+         else {
+            num = randomNumber (16, 40);
+        }
+        
+
+    
 
         
         

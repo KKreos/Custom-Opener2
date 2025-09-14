@@ -22,8 +22,29 @@
         </div>
         
         <button id="Open">Open Pack</button>
-        <button id="View">View Cards</button> 
+        <button id="View" onclick=ShowHistoryDialog()>View Cards</button> 
         <button id="YDK">Get the .YDK files</button> 
+
+        <dialog id="History">
+            <h2>History</h2>
+            <form>
+                <button>Close</button>
+                 <img id="Back" src="./Custom-Pack-YGO-1/Back.png" class="anim">
+            <img id="Back" src="./Custom-Pack-YGO-1/Back.png" class="anim">
+            <img id="Back" src="./Custom-Pack-YGO-1/Back.png" class="anim">
+            <img id="Back" src="./Custom-Pack-YGO-1/Back.png" class="anim">
+            <img id="Back" src="./Custom-Pack-YGO-1/Back.png" class="anim">
+            <img id="Back" src="./Custom-Pack-YGO-1/Back.png" class="anim">
+            </form>
+        </dialog>
+
+        <script>
+            const dialog = document.getElementById("History")
+            
+            function ShowHistoryDialog(){
+                dialog.showModal()
+            }
+        </script>
 
     </body>
 

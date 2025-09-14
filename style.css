@@ -11,6 +11,14 @@ body {
     
 }
 
+img.Yugioh-card{
+    transition: transform 0.3 ease;
+}
+
+img.Yugioh-card:hover {
+    transform: scale(1.1);
+}
+
 #Back {
     width: 216px;
     height: 360px;

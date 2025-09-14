@@ -8,14 +8,10 @@ body {
     height: 360px;
     margin-top: 200px;
     margin-left: 3px;
-    
+    transition: transform 0.3s ease;
 }
 
-img.Yugioh-card{
-    transition: transform 0.3 ease;
-}
-
-img.Yugioh-card:hover {
+.Yugioh-card img:hover {
     transform: scale(1.1);
 }
 
